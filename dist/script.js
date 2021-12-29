@@ -976,6 +976,7 @@ var modals = function modals() {
         btnPressed = true;
         windows.forEach(function (window) {
           window.style.display = 'none';
+          window.classList.add('animated', 'fadeIn');
         });
         modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
