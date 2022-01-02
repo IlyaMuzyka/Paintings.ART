@@ -1,5 +1,3 @@
-// import checkNumInputs from './checkNumInputs';
-
 const forms = () => {
     const forms = document.querySelectorAll('form'),
           inputs = document.querySelectorAll('input'),
@@ -18,8 +16,6 @@ const forms = () => {
         designer: 'assets/server.php',
         question: 'assets/question.php'
     };
-
-    // checkNumInputs('input[name="user_phone"]');
 
     const postData = async (url, data) => {
         let result = await fetch(url, {
