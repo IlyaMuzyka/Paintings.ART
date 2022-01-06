@@ -902,10 +902,24 @@ h4 {
 .often-questions .accordion-heading span {
   border-bottom: 2px dotted #333;
 }
+.often-questions .accordion-heading.active span {
+  color: #c51abb;
+  text-decoration: none;
+  border: 0;
+  font-weight: 900;
+}
 .often-questions .accordion-block {
-  margin-top: 1rem;
   background-color: #f7e7e6;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+.often-questions .accordion-block.active {
   padding: 3rem 4rem;
+  margin-top: 1rem;
+  opacity: 1;
+  overflow: visible;
 }
 .often-questions .accordion-block:before {
   content: '';
