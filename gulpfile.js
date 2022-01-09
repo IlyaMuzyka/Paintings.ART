@@ -88,7 +88,7 @@ gulp.task("build-prod-js", () => {
                             }
                           }
                         ]
-                      }
+                    }
                 }))
                 .pipe(gulp.dest(dist));
 });
